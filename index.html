@@ -1338,15 +1338,15 @@ function giftItems(){
      stickers.jpg — any missing photo falls back to the built-in SVG art. */
   const real=(n,extra)=>`<img class="real${extra||''}" src="case2/${n}.png" alt="" onerror="this.remove()">`;
   return [
-    `<div class="pitem"><div class="sh"></div>${coverWorkshop('gw')}${real('workshop.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${coverSheet('gs')}${real('classsheet.jpg')}</div>`,
-    `<div class="pitem wide"><div class="sh"></div>${sheetInsideSVG()}${real('classsheet-inside.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${coverConcepts('gc')}${real('concepts.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${padSVG()}${real('notepad.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${padBackSVG('po','#200a04','#8a3d0e','#c96a24')}${real('pad-orange.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${padBackSVG('pg','#03130a','#0d3a1e','#2e7d3f')}${real('pad-green.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${toteSVG()}${real('tote.jpg')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${stickerSVG()}${real('stickers.jpg')}</div>`
+    `<div class="pitem"><div class="sh"></div>${coverWorkshop('gw')}${real('workshop')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${coverSheet('gs')}${real('classsheet')}</div>`,
+    `<div class="pitem wide"><div class="sh"></div>${sheetInsideSVG()}${real('classsheet-inside')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${coverConcepts('gc')}${real('concepts')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${padSVG()}${real('notepad')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${padBackSVG('po','#200a04','#8a3d0e','#c96a24')}${real('pad-orange')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${padBackSVG('pg','#03130a','#0d3a1e','#2e7d3f')}${real('pad-green')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${toteSVG()}${real('tote')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${stickerSVG()}${real('stickers')}</div>`
   ].join('');
 }
 function giftOpen(){
