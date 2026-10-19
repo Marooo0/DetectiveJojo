@@ -503,7 +503,8 @@ function renderIntro(){
      <button class="btn gold" data-act="brief">OPEN THE CASE FILE →</button>
      ${loadSave()?`<button class="btn" data-act="resume">⟳ RESUME THE CASE</button>`:''}
      <button class="btn mini" data-act="skipIntro" style="margin-inline-start:auto">skip the voices ⏭</button>
-   </div>`;
+   </div>
+   <p class="quotefoot" style="margin-top:26px;text-align:center">✦ Created by <b class="gold">Marwan</b> for Dr. Joseph Adel &nbsp;·&nbsp; <span class="ar" dir="rtl">إعداد مروان — لدكتور جوزيف عادل</span></p>`;
   show('s-intro');
   const lines=[
    {en:'The city slept — until the Bat-Lantern lit over Nasr City.',
@@ -1142,6 +1143,53 @@ function coverWorkshop(u){return `<svg width="128" height="184" viewBox="0 0 128
    <text x="64" y="177" text-anchor="middle" fill="#f5efe0" font-size="7" font-weight="700" font-family="Arial,sans-serif">HIGH LEVEL EXAMS</text>
    ${coilV(5,16,168,9)}
   </svg>`;}
+function coverExplanation(u){return `<svg width="128" height="184" viewBox="0 0 128 184" aria-hidden="true">
+   <defs>
+    <linearGradient id="${u}eb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d0a14"/><stop offset=".6" stop-color="#191024"/><stop offset="1" stop-color="#08060c"/></linearGradient>
+    <radialGradient id="${u}eg" cx=".5" cy=".5" r=".65"><stop offset="0" stop-color="rgba(150,80,220,.4)"/><stop offset="1" stop-color="rgba(60,20,90,0)"/></radialGradient>
+   </defs>
+   <rect x="2" y="2" width="124" height="180" rx="7" fill="url(#${u}eb)" stroke="#2c1e46" stroke-width="1.5"/>
+   <rect x="2" y="2" width="124" height="180" rx="7" fill="url(#${u}eg)"/>
+   <g fill="none" stroke="#9a6ae0" stroke-width="1.4" opacity=".75">
+    <rect x="14" y="34" width="18" height="12" rx="2" fill="rgba(150,90,220,.18)"/>
+    <path d="M16,36 l14,10 M30,36 l-14,10" opacity=".6"/>
+    <circle cx="106" cy="96" r="8" opacity=".55"/><path d="M100,32 h12 M104,38 h8" opacity=".5"/>
+    <circle cx="24" cy="60" r="2.5" opacity=".5"/><circle cx="108" cy="60" r="2" opacity=".5"/>
+   </g>
+   ${jjaLogo(9,9,0.85,'#f5efe0')}
+   <text x="9" y="38" fill="#cfc4e0" font-size="5.4" font-family="Arial,sans-serif" letter-spacing=".5">DR JOSEPH ADEL</text>
+   <g transform="translate(38,10)">
+    <text x="0" y="12" fill="#e8b73a" font-family="'Bebas Neue',sans-serif" font-size="16" font-weight="900">3</text>
+    <text x="11" y="6" fill="#f2e6c8" font-size="7.5" font-family="Arial,sans-serif">Third</text>
+    <text x="11" y="14" fill="#f2e6c8" font-size="7.5" font-family="Arial,sans-serif">Secondary</text>
+   </g>
+   <text x="117" y="14" fill="#f2e6c8" font-family="'Bebas Neue',sans-serif" font-size="10" letter-spacing="1" text-anchor="end">20</text>
+   <text x="117" y="24" fill="#f2e6c8" font-family="'Bebas Neue',sans-serif" font-size="10" letter-spacing="1" text-anchor="end">27</text>
+   <text x="66" y="52" text-anchor="middle" fill="#e8b73a" font-family="'Bebas Neue',sans-serif" font-size="20" letter-spacing="1">CHEMICAL</text>
+   <text x="66" y="66" text-anchor="middle" fill="#f5efe0" font-family="'Bebas Neue',sans-serif" font-size="16" letter-spacing="3">ANALYSIS</text>
+   <g transform="translate(66,100)">
+    <path d="M-18,4 L18,4 L22,32 L-22,32 Z" fill="#28203a"/>
+    <path d="M-6,8 l-6,-4 M6,8 l6,-4" stroke="#4a3866" stroke-width="5"/>
+    <circle cx="0" cy="-4" r="10" fill="#e0b080"/>
+    <path d="M-12,-10 Q-8,-24 0,-23 Q8,-24 12,-10 Q0,-17 -12,-10 Z" fill="#14141a"/>
+    <circle cx="-4" cy="-4" r="4" fill="none" stroke="#14141a" stroke-width="2"/>
+    <circle cx="4.5" cy="-4" r="4" fill="none" stroke="#14141a" stroke-width="2"/>
+    <path d="M-0.2,-4 h.4" stroke="#14141a" stroke-width="1.6"/>
+    <circle cx="10" cy="-2" r="7.5" fill="rgba(140,240,190,.2)" stroke="#20261c" stroke-width="2"/>
+    <circle cx="10" cy="-2" r="3" fill="rgba(160,250,200,.35)"/>
+    <path d="M13,4 L17,12" stroke="#20261c" stroke-width="2.6"/>
+    <circle cx="0" cy="18" r="7" fill="none" stroke="#20261c" stroke-width="2"/>
+    <circle cx="0" cy="18" r="4.4" fill="rgba(170,240,140,.4)"/>
+    <ellipse cx="4" cy="26" rx="10" ry="5" fill="rgba(170,240,140,.2)"/>
+   </g>
+   <rect x="18" y="134" width="92" height="11" rx="2" fill="#e8b73a"/>
+   <text x="64" y="142.4" text-anchor="middle" fill="#14100a" font-size="8.4" font-weight="800" font-family="Arial,sans-serif">Chapter 2</text>
+   <rect x="14" y="147" width="100" height="14" rx="2" fill="#0c0a12"/>
+   <text x="64" y="157.6" text-anchor="middle" fill="#f5efe0" font-family="'Bebas Neue',sans-serif" font-size="10.6" letter-spacing="2">EXPLANATION</text>
+   <rect x="30" y="163" width="68" height="8.5" rx="2" fill="#e8b73a"/>
+   <text x="64" y="169.4" text-anchor="middle" fill="#14100a" font-size="6.2" font-weight="700" font-family="Arial,sans-serif">Dr. Joseph Adel</text>
+   ${coilV(5,16,168,9)}
+  </svg>`;}
 function toteSVG(){const R='#b8342c';return `<svg width="152" height="180" viewBox="0 0 152 180" aria-hidden="true">
    <path d="M52,40 Q76,16 100,40" fill="none" stroke="#e0d8c4" stroke-width="6"/>
    <rect x="16" y="38" width="120" height="130" rx="8" fill="#f4f1e8" stroke="#d8d2bd" stroke-width="1.5"/>
@@ -1336,15 +1384,14 @@ function giftItems(){
      drawn models: workshop.jpg · classsheet.jpg · classsheet-inside.jpg ·
      concepts.jpg · notepad.jpg · pad-orange.jpg · pad-green.jpg · tote.jpg ·
      stickers.jpg — any missing photo falls back to the built-in SVG art. */
-  const real=(n,extra)=>`<img class="real${extra||''}" src="case2/${n}.png" alt="" onerror="this.remove()">`;
+  const real=(n,extra)=>`<img class="real${extra||''}" src="case2/${n}.png" alt="" onerror="if(!this.dataset.j){this.dataset.j=1;this.src='case2/${n}.jpg'}else{this.remove()}">`;
   return [
     `<div class="pitem"><div class="sh"></div>${coverWorkshop('gw')}${real('workshop')}</div>`,
     `<div class="pitem"><div class="sh"></div>${coverSheet('gs')}${real('classsheet')}</div>`,
     `<div class="pitem wide"><div class="sh"></div>${sheetInsideSVG()}${real('classsheet-inside')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${coverConcepts('gc')}${real('concepts')}</div>`,
+    `<div class="pitem wide"><div class="sh"></div>${coverConcepts('gc')}${real('concepts')}</div>`,
+    `<div class="pitem"><div class="sh"></div>${coverExplanation('gx')}${real('explanation')}</div>`,
     `<div class="pitem"><div class="sh"></div>${padSVG()}${real('notepad')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${padBackSVG('po','#200a04','#8a3d0e','#c96a24')}${real('pad-orange')}</div>`,
-    `<div class="pitem"><div class="sh"></div>${padBackSVG('pg','#03130a','#0d3a1e','#2e7d3f')}${real('pad-green')}</div>`,
     `<div class="pitem"><div class="sh"></div>${toteSVG()}${real('tote')}</div>`,
     `<div class="pitem"><div class="sh"></div>${stickerSVG()}${real('stickers')}</div>`
   ].join('');
@@ -1354,10 +1401,11 @@ function giftOpen(){
   modal({html:`<button class="mclose" data-act="mclose">✕</button>
    <h3>🎁 THE CHAPTER 2 PACKAGE</h3>
    <p class="sub">You solved the case, detective. Dr. Joseph Adel left this at the precinct door:
-   the full <b>Class Sheet &amp; Homework Questions · فكرة وتطبيق (Concepts &amp; Applications) · Workshop Revision &amp; High Level Exams</b> set —
-   covers <i>and</i> the IMP NOTES inside — plus the detective notepad, the two JJA pads, the tote and the stickers. <span class="ar" dir="rtl">هدية تدرسها وتلبسها وتلصقها</span></p>
+   the full <b>Class Sheet &amp; Homework Questions · فكرة وتطبيق (Concepts &amp; Applications) · Workshop · Explanation</b> set —
+   covers <i>and</i> the IMP NOTES inside — plus the detective notepad, the tote and the stickers. <span class="ar" dir="rtl">هدية تدرسها وتلبسها وتلصقها</span></p>
    <div class="gift" id="giftStage"><div class="giftglow"></div><div class="giftfloor"></div><div class="turntable" id="turntable">${giftItems()}</div></div>
-   <p class="quotefoot" style="text-align:center">drag to spin · touch works too · spiral bindings and all</p>`});
+   <p class="quotefoot" style="text-align:center">drag to spin · touch works too · spiral bindings and all</p>
+   <p class="quotefoot" style="text-align:center">Created by <b class="gold">Marwan</b> for Dr. Joseph Adel &nbsp;·&nbsp; <span class="ar" dir="rtl">إعداد مروان — لدكتور جوزيف عادل</span></p>`});
   giftInit();
 }
 function giftInit(){
