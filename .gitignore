@@ -7,3 +7,7 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Local publishing helper (not part of the website)
+publish.ps1
+publish.cmd
